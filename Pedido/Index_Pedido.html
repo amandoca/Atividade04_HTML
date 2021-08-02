@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="utf-8" />
+     <title>Equipamentos de Informática</title>
+  </head>
+  <body>
+    <header>
+        <h1>Equipamentos de Informática</h1>
+        <ul>
+            <li><a href="../Index.html">Home</a></li>
+            <li><a href="Index_Pedido.html">Fazer Pedido</a></li>
+        </ul>
+    </header>
+    <main>
+        <img src="../Imagens/Equipamentos.png" alt="Equipamentos de Informática" width="900" />
+        <h2>Fazer Pedido</h2>
+        <form method="get">	
+            Nome: <input type="text" name="Nome" size="40" maxlength="40" 
+            placeholder="Nome" autofocus required />
+            RG: <input type="text" name="RG" size="12" maxlength="12" 
+                         placeholder="RG"  required />
+            E-mail: <input type="email" name="email" size="30" maxlength="30" placeholder="E-mail" required />
+            <br /><br />
+            Equipamento: <select name="tipo" required>
+                       <option value="" selected disabled>Escolha... </option>
+                       <option value="comp">Computador</option>
+                       <option value="note">Notebook</option>
+                       <option value="tab">Tablet</option>
+                     </select>                     
+            Quantidade: <input type="number" name="quant" min="1" max="10" />  
+            <input type="checkbox" name="garantia" value="Sim" />Garantia Estendida?
+            <br /><br />  
+            Cor: <input type="radio" name="cor" value="branco" /> Branco
+                  <input type="radio" name="cor" value="preto" /> Preto
+                  <input type="radio" name="cor" value="prata" /> Prata
+            <br /><br /> 
+            Endereço:
+            <br />
+            <textarea name="ender" rows="3" cols="70" placeholder="Endereço completo" ></textarea>            
+            <br /> <br />
+            <input type="submit" value="Enviar Pedido" >
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+  </body>
+</html>
